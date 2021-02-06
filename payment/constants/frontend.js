@@ -9,7 +9,7 @@ console.log("process.env.NODE_ENV which comes to payment/constants/frontend.js =
 ////***by changing production to development on line 12 you can switch to localhost if needed****
 
 module.exports =
-  process.env.NODE_ENV === "production"
+  process.env.NODE_ENV === "development"
     ? FRONTEND_PROD_URLS
     : FRONTEND_DEV_URLS;
 

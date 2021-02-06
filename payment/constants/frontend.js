@@ -4,8 +4,8 @@
 const FRONTEND_DEV_URLS = ["https://the-authors.netlify.app"];
 const FRONTEND_PROD_URLS = ["https://the-authors.netlify.app", "https://the-authors.netlify.app"];
 
+console.log("process.env.NODE_ENV" = process.env.NODE_ENV)
 module.exports =
-console.log('process.env.NODE_ENV' = process.env.NODE_ENV)
   process.env.NODE_ENV === "production"
     ? FRONTEND_PROD_URLS
     : FRONTEND_DEV_URLS;

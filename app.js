@@ -29,6 +29,9 @@ app.get('/hello', (req,res)=>{
 app.get('/test', (req,res)=>{
   res.send('TEST TEST TEST FROM THE AUTHORS-SERVER')
 })
+app.get('/test2', (req,res)=>{
+  res.send('THIS IS TEST 2 FROM THE AUTHORS-SERVER')
+})
 
 
 ////////////////// UPLOAD FILES

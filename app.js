@@ -40,7 +40,8 @@ app.get('/test3', (req,res)=>{
 ////////////////// UPLOAD FILES
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, "tellStoryForm/uploads"); //////////////////where is it better to save files for uploading?
+    // cb(null, "tellStoryForm/uploads"); 
+    cb(null, "tellStoryForm"); 
   },
   filename: function (req, file, cb) {
     cb(null, file.originalname);

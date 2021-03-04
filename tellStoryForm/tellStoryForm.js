@@ -6,8 +6,6 @@ const delFiles = require("./delFiles");
 const userEmail = ck.EMAIL;
 const userPassword = ck.PASSWORD;
 
-const uploadsDir = __dirname //+ "/uploads/";
-
 const contactEmail = nodemailer.createTransport({
   service: "gmail",
   auth: {
@@ -36,7 +34,6 @@ router.post("/tell-story", (req, res) => {
     ? [
         {
           filename: imageName,
-          // path: `./tellStoryForm/uploads/${imageName}`,
           path: `./tellStoryForm/${imageName}`,
         },
       ]

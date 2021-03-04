@@ -2,7 +2,7 @@ const rimraf = require("rimraf");
 const path = require("path");
 const fs = require("fs");
 
-const uploadsDir = __dirname; // + "/uploads/";
+const uploadsDir = __dirname; // + "/uploads/" if required;
 
 const delFiles = () =>
   fs.readdir(uploadsDir, function (err, files) {

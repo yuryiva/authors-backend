@@ -40,12 +40,16 @@ The payment system was done by applying [Stripe](https://stripe.com/)
 Also for the backend part a .ENV FILE is required:
 
 EMAIL=.........actual gmail for emails............
+
 PASSWORD=......password for gmail.................
+
 PORT=8080
+
 NODE_ENV=development......... or it can be switched to production for deployment purposes 
+
 REACT_APP_STRIPE_KEY=sk_test_........the actual api key for stripe
 
-you also might need to lower the security of gmail
+- you also might need to lower the security of gmail
 #
 <a href="https://the-authors.netlify.app/" target="_blank">Live presentation</a>
 
